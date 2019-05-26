@@ -17,7 +17,7 @@ NC='\033[0m'
 
 if [ ! -e /usr/local/bin/Auto-Delete-Client ]; then
 	echo "0 */6 * * * root /usr/local/bin/Auto-Delete-Client" > /etc/cron.d/Auto-Delete-Client
-	wget -O /usr/local/bin/Auto-Delete-Client " https://raw.githubusercontent.com/imoddang/code_vpn/master/Auto-Delete-Client"
+	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/imoddang/code_vpn/master/Auto-Delete-Client"
 	chmod +x /usr/local/bin/Auto-Delete-Client
 	/etc/init.d/cron restart
 	/etc/init.d/cron start
@@ -664,7 +664,7 @@ if [[ -e /usr/local/bin/speedtest ]]; then
 	clear
 	speedtest --share
 elif [[ ! -e /usr/local/bin/speedtest ]]; then
-	wget -O /usr/local/bin/speedtest " https://raw.githubusercontent.com/imoddang/code_vpn/master/Speedtest"
+	wget -O /usr/local/bin/speedtest "https://raw.githubusercontent.com/imoddang/code_vpn/master/Speedtest"
 	chmod +x /usr/local/bin/speedtest
 	clear
 	speedtest --share
