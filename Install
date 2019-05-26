@@ -1050,7 +1050,7 @@ fi
 	0) # ==================================================================================================================
 
 rm -rf Install
-wget https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Install && chmod +x Install && bash Install
+wget https://raw.githubusercontent.com/imoddang/code_vpn/master/Install && chmod +x Install && bash Install
 
 	;;
 
