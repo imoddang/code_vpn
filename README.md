@@ -1,5 +1,7 @@
 Script Installation
+
 OpenVPN, Pritunl, Proxy, SHH Dropbear, Web Panel
+
 วิธีติดตั้ง openvpn
 รันคำสั่งตามนี้
 
