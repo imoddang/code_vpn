@@ -17,7 +17,7 @@ NC='\033[0m'
 
 if [ ! -e /usr/local/bin/Auto-Delete-Client ]; then
 	echo "0 */6 * * * root /usr/local/bin/Auto-Delete-Client" > /etc/cron.d/Auto-Delete-Client
-	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Auto-Delete-Client"
+	wget -O /usr/local/bin/Auto-Delete-Client " https://raw.githubusercontent.com/imoddang/code_vpn/master/Auto-Delete-Client"
 	chmod +x /usr/local/bin/Auto-Delete-Client
 	/etc/init.d/cron restart
 	/etc/init.d/cron start
@@ -26,7 +26,7 @@ fi
 # Menu
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang VPN"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
@@ -398,7 +398,7 @@ fi
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script By Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo ""
@@ -539,7 +539,7 @@ fi
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "${GRAY}ตั้งค่าเวลารีบูทเซิฟเวอร์อัตโนมัติ ${NC} "
@@ -664,7 +664,7 @@ if [[ -e /usr/local/bin/speedtest ]]; then
 	clear
 	speedtest --share
 elif [[ ! -e /usr/local/bin/speedtest ]]; then
-	wget -O /usr/local/bin/speedtest "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Speedtest"
+	wget -O /usr/local/bin/speedtest " https://raw.githubusercontent.com/imoddang/code_vpn/master/Speedtest"
 	chmod +x /usr/local/bin/speedtest
 	clear
 	speedtest --share
@@ -697,7 +697,7 @@ read -n1 -r -p "หากเข้าใจแล้วให้กด Enter เ
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "${GRAY}ตั้งค่า Hostname${NC}"
@@ -859,7 +859,7 @@ TXTOTAL=$(vnstat -i $INTERFACE | grep "tx:" | awk '{print $5" "substr ($9, 1, 1)
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
@@ -1084,20 +1084,18 @@ exit
 
 if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	apt-get install python
-	wget -O /usr/local/bin/Banwidth-Per-Client "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Banwidth-Per-Client"
+	wget -O /usr/local/bin/Banwidth-Per-Client "https://raw.githubusercontent.com/imoddang/code_vpn/master/Banwidth-Per-Client"
 	chmod +x /usr/local/bin/Banwidth-Per-Client
 	clear
 	echo ""
-	echo -e "Script by ${GRAY}Weerawat Khlaolamom (P'Beer) ${NC}"
-	echo -e "FB Group : ${GRAY}https://www.facebook.com/groups/143457819538014/ ${NC}"
+	echo -e "Script by ${GRAY}Dang Vpn ${NC}"
 	echo ""
 	Banwidth-Per-Client
 	echo ""
 else
 	clear
 	echo ""
-	echo -e "Script by ${GRAY}Weerawat Khlaolamom (P'Beer) ${NC}"
-	echo -e "FB Group : ${GRAY}https://www.facebook.com/groups/143457819538014/ ${NC}"
+	echo -e "Script by ${GRAY}Dang Vpn ${NC}"
 	echo ""
 	Banwidth-Per-Client
 	echo ""
@@ -1110,7 +1108,7 @@ fi
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "${GRAY}ปรับเปลี่ยนระบบของเซิฟเวอร์ ${NC} "
@@ -1190,7 +1188,7 @@ fi
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "${GRAY}แบนและปลดแบนบัญชีผู้ใช้ ${NC} "
@@ -1274,8 +1272,7 @@ esac
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Apiwat Panyoi"
-echo "  (,(”)(”) °.¸¸.• Edit the Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang  Vpn"
 echo ""
 echo -e "${GRAY}ปรับความเร็วอินเตอร์เน็ต ${NC} "
 echo ""
@@ -1357,7 +1354,7 @@ esac
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script By Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "เปิด-ปิด-รีสตาร์ท การทำงานของระบบ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
@@ -1584,7 +1581,7 @@ esac
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "แก้ไขคอนฟิกต่างๆในระบบ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
@@ -1644,7 +1641,7 @@ fi
 clear
 echo ""
 echo "  (\_(\ "
-echo " (=’ :’) :* Script by Mnm Ami"
+echo " (=’ :’) :* Script by Dang Vpn"
 echo "  (,(”)(”) °.¸¸.•"
 echo ""
 echo -e "|${GRAY}1${NC}| สำรองข้อมูล"
@@ -1683,10 +1680,10 @@ esac
 	0) # ==================================================================================================================
 
 rm -f /usr/local/bin/menu
-wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Menu"
+wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/imoddang/code_vpn/master/Menu"
 chmod +x /usr/local/bin/menu
 rm -f /usr/local/bin/Auto-Delete-Client 
-wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Auto-Delete-Client"
+wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/imoddang/code_vpn/master/Auto-Delete-Client"
 chmod +x /usr/local/bin/Auto-Delete-Client
 menu
 
