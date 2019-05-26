@@ -350,17 +350,17 @@ END
 	fi
 
 
-	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Menu"
+	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/imoddang/code_vpn/master/Menu"
 	chmod +x /usr/local/bin/menu
 	apt-get -y install vnstat
 	
 	clear
 	echo ""
 	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by Mnm Ami"
+	echo " (=’ :’) :* Script by Dang Vpn"
 	echo "  (,(”)(”) °.¸¸.•"
 	echo ""
-	echo "Donate via TrueMoney Wallet : 082-038-2600"
+	echo "Donate via TrueMoney Wallet : 0839867540"
 	echo ""
 	echo "OpenVPN, Squid Proxy, Nginx .....Install finish."
 	echo "IP Server : $IP"
