@@ -1,2 +1,3 @@
 # code_vpn
-scripe von center
+Script Install Ooen VPN 
+
