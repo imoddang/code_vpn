@@ -65,7 +65,7 @@ NC='\033[0m'
 
 # Menu
 echo ""
-echo "  (°_°) "
+		echo "  (°_°) "
 		echo " DANG VPN"
 		echo "  (*_*)"
 		echo ""
@@ -736,10 +736,10 @@ fi
 if [[ "$NoSquid" = 'N' ]]; then
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by Dang Vpn"
-	echo "  (,(”)(”) °.¸¸.•"
-	echo ""
+		echo "  (°_°) "
+		echo " DANG VPN"
+		echo "  (*_*)"
+		echo ""
 	echo "Donate via TrueMoney Wallet : 0839867540"
 	echo ""
 	echo "Pritunl .....Install Finish."
@@ -847,10 +847,10 @@ fi
 
 clear
 echo ""
-echo "  (\_(\ "
-echo " (=’ :’) :* Script by Dang Vpn"
-echo "  (,(”)(”) °.¸¸.•"
-echo ""
+		echo "  (°_°) "
+		echo " DANG VPN"
+		echo "  (*_*)"
+		echo ""
 echo "Donate via TrueMoney Wallet : 083 9867 540"
 echo ""
 echo "Pritunl, Squid Proxy .....Install Finish."
@@ -981,11 +981,10 @@ END
 	fi
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by DANGVPN"
-	echo "  (,(”)(”) °.¸¸.•"
-	echo ""
-	echo "Source by DANGVPN"
+		echo "  (°_°) "
+		echo " DANG VPN"
+		echo "  (*_*)"
+		echo ""
 	echo "Donate via TrueMoney Wallet : 0839867540"
 	echo ""
 	echo "Squid Proxy .....Install finish."
@@ -1030,11 +1029,10 @@ END
 	/etc/init.d/squid restart
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by DANGVPN"
-	echo "  (,(”)(”) °.¸¸.•"
-	echo ""
-	echo "Source by DANGVPN"
+		echo "  (°_°) "
+		echo " DANG VPN"
+		echo "  (*_*)"
+		echo ""
 	echo "Donate via TrueMoney Wallet : 0839867540"
 	echo ""
 	echo "Squid Proxy .....Install finish."
