@@ -31,9 +31,7 @@ if [[ -e /etc/debian_version ]]; then
 
 	if [[ "$VERSION_ID" != 'VERSION_ID="7"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="8"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="9"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="14.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="16.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="17.04"' ]]; then
 		echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
+		echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
 		echo ""
 		echo "เวอร์ชั่น OS ของคุณเป็นเวอร์ชั่นที่ยังไม่รองรับ"
 		echo "สำหรับเวอร์ชั่นที่รองรับได้ จะมีดังนี้..."
@@ -45,10 +43,8 @@ if [[ -e /etc/debian_version ]]; then
 	fi
 else
 	echo ""
-	echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
 	echo "OS ที่คุณใช้ไม่สามารถรองรับได้กับสคริปท์นี้"
 	echo "สำหรับ OS ที่รองรับได้ จะมีดังนี้..."
 	echo ""
@@ -64,11 +60,9 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 # Menu
-echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
+	echo ""
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "ฟังก์ชั่นสคริปท์ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
 	echo ""
@@ -467,7 +461,7 @@ http {
 }
 END
 	mkdir -p /home/vps/public_html
-	echo "<pre>DANG VPN| Donate via TrueMoney Wallet : 083-986-7540</pre>" > /home/vps/public_html/index.html
+	echo "<pre>DANG VPN| Donate TrueMoney Wallet : 083-986-7540</pre>" > /home/vps/public_html/index.html
 	echo "<?phpinfo(); ?>" > /home/vps/public_html/info.php
 	args='$args'
 	uri='$uri'
@@ -602,11 +596,11 @@ fi
 	esac
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* VPN by Dangjadjae"
-	echo "  (,(”)(”) °.¸¸.•"
 	echo ""
-	echo "Donate via TrueMoney Wallet : 083-986-7540"
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
+	echo ""
+	echo "Donate TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "OpenVPN, Squid Proxy, Nginx .....Install finish."
 	echo "IP Server : $IP"
@@ -736,11 +730,10 @@ fi
 if [[ "$NoSquid" = 'N' ]]; then
 	clear
 	echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo ""
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
+	echo "Donate  TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "Pritunl .....Install Finish."
 	echo "No Proxy"
@@ -847,11 +840,10 @@ fi
 
 clear
 echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
-echo "Donate via TrueMoney Wallet : 083 9867 540"
+echo ""
+echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+echo ""
+echo "Donate  TrueMoney Wallet : 083-986-7540"
 echo ""
 echo "Pritunl, Squid Proxy .....Install Finish."
 echo "IP Proxy : $IP"
@@ -880,11 +872,9 @@ elif [[ ! -e /etc/default/dropbear ]]; then
 	PORTSSH=$(grep '^Port ' /etc/ssh/sshd_config | cut -d " " -f 2)
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by Dang Vpn"
-	echo "  (,(”)(”) °.¸¸.•"
 	echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo "  Donate true money Wallet : 083-986-7540"
 	echo ""
 	echo "SSH Dropbear .....Install Finish."
 	echo "IP Addrsss : $IP"
@@ -917,11 +907,11 @@ if [[ -e /etc/squid3/squid.conf ]]; then
 	apt-get -y remove --purge squid3
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by DANGVPN"
-	echo "  (,(”)(”) °.¸¸.•"
 	echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
+	echo ""
+	echo "Donate TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "Squid Proxy .....Removed."
 	exit
@@ -929,11 +919,11 @@ elif [[ -e /etc/squid/squid.conf ]]; then
 	apt-get -y remove --purge squid
 	clear
 	echo ""
-	echo "  (\_(\ "
-	echo " (=’ :’) :* Script by DANGVPN"
-	echo "  (,(”)(”) °.¸¸.•"
 	echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo """
+	echo ""
+	echo "Donate TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "Squid Proxy .....Removed."
 	exit
@@ -981,11 +971,10 @@ END
 	fi
 	clear
 	echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo ""
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
+	echo "Donate  TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "Squid Proxy .....Install finish."
 	echo "IP Proxy : $IP"
@@ -1029,11 +1018,10 @@ END
 	/etc/init.d/squid restart
 	clear
 	echo ""
-		echo "  (°_°) "
-		echo " DANG VPN"
-		echo "  (*_*)"
-		echo ""
-	echo "Donate via TrueMoney Wallet : 0839867540"
+	echo ""
+	echo " (°_°) (-_-) DANG VPN (^-^)(*_*)"
+	echo ""
+	echo "Donate TrueMoney Wallet : 083-986-7540"
 	echo ""
 	echo "Squid Proxy .....Install finish."
 	echo "IP Proxy : $IP"
