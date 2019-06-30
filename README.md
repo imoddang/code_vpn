@@ -10,12 +10,12 @@ wget https://raw.githubusercontent.com/imoddang/code_vpn/master/Install && chmod
 *******************
 
 สคริปแก้ไขให้ใช้ user root ได้
-สำหรับ debian9
+สำหรับ debian 8,9
+รันคำสั่งตามนี้
 
 wget -O /etc/ssh/sshd_config 'https://raw.githubusercontent.com/imoddang/code_vpn/master/sshd_config'
 
 เสร็จแล้ว กำหนด รหัสผ่าน root
-passwd root 
-ใส่รหัส
-
-เสร็จแล้ว reboot
+พิมพ์ passwd root กด enter
+ใส่รหัส แล้วแต่มึงใส่ แล้วกด enter
+เสร็จแล้ว พิมพ์ reboot แล้วกด enter
