@@ -590,7 +590,7 @@ exit
 
 	4)
 
-echo "0 0 * * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
+echo "03 00 * * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
 echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 1 วันเรียบร้อยแล้ว"
 echo ""
@@ -600,7 +600,7 @@ exit
 
 	5)
 
-echo "0 0 */7 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
+echo "03 00 */7 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
 echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 7 วันเรียบร้อยแล้ว"
 echo ""
@@ -610,7 +610,7 @@ exit
 
 	6)
 
-echo "0 0 1 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
+echo "30 00 1 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
 echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 30 วันเรียบร้อยแล้ว"
 echo ""
