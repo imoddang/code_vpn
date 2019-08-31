@@ -545,10 +545,10 @@ echo ""
 echo -e "${GRAY}ตั้งค่าเวลารีบูทเซิฟเวอร์อัตโนมัติ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| รีบูททุกๆ  1 ชั่วโมง"
-echo -e "|${GRAY}2${NC}| รีบูททุกๆ  6 ชั่วโมง"
-echo -e "|${GRAY}3${NC}| รีบูททุกๆ 12 ชั่วโมง"
-echo -e "|${GRAY}4${NC}| รีบูททุกๆ  1 วัน"
-echo -e "|${GRAY}5${NC}| รีบูททุกๆ  7 วัน"
+echo -e "|${GRAY}2${NC}| รีบูททุกๆ  12 ชั่วโมง"
+echo -e "|${GRAY}3${NC}| รีบูททุกๆ 1 วัน"
+echo -e "|${GRAY}4${NC}| รีบูททุกๆ  7 วัน"
+echo -e "|${GRAY}5${NC}| รีบูททุกๆ  15 วัน"
 echo -e "|${GRAY}6${NC}| รีบูททุกๆ 30 วัน"
 echo -e "|${GRAY}7${NC}| หยุดการรีบูทเซิฟเวอร์"
 echo -e "|${GRAY}8${NC}| ตรวจสอบดูบันทึกการรีบูทเซิฟเวอร์"
@@ -570,16 +570,6 @@ exit
 
 	2)
 
-echo "0 */6 * * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
-echo ""
-echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 6 ชั่วโมงเรียบร้อยแล้ว"
-echo ""
-exit
-
-	;;
-
-	3)
-
 echo "0 */12 * * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
 echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 12 ชั่วโมงเรียบร้อยแล้ว"
@@ -588,7 +578,7 @@ exit
 
 	;;
 
-	4)
+	3)
 
 echo "03 00 * * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
@@ -598,7 +588,7 @@ exit
 
 	;;
 
-	5)
+	4)
 
 echo "03 00 */7 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
@@ -608,9 +598,19 @@ exit
 
 	;;
 
+	5)
+
+echo "03 00 */15 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
+echo ""
+echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 15 วันเรียบร้อยแล้ว"
+echo ""
+exit
+
+	;;
+
 	6)
 
-echo "30 00 1 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
+echo "03 00 1 * * root /usr/local/bin/Reboot-Server" > /etc/cron.d/Reboot-Server
 echo ""
 echo "ตั้งค่ารีบูทเซิฟเวอร์ทุกๆ 30 วันเรียบร้อยแล้ว"
 echo ""
