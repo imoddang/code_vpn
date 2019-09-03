@@ -25,19 +25,16 @@ fi
 
 # Menu
 clear
-echo " #========= OS-32 & 64-bit ===============#"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " #==========OS-32 & 64-bit ===============#"
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
-	echo "เมนูสคริปท์ "
+	echo "เลือกเมนูโดยพิมพ์ตัวเลข"
 	echo ""
 	echo -e "|${GRAY} 1${NC}| เพิ่มบัญชีผู้ใช้"
 	if [[ $CHECKSYSTEM ]]; then
@@ -74,7 +71,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "|${GRAY}00${NC}| เปลี่ยนเป็นภาษาอังกฤษ"
 
 elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
-	echo "MENU SCRIPT"
+	echo "Select Menu"
 	echo ""
 	echo -e "|${GRAY} 1${NC}| ADD NEW CLIENT"
 	if [[ $CHECKSYSTEM ]]; then
@@ -147,6 +144,7 @@ elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
 	read -p "Select a Menu Script : " MENU
 fi
 
+clear
 case $MENU in
 
 	1) # ==================================================================================================================
@@ -183,6 +181,7 @@ if [[ $CHECKSYSTEM ]]; then
 		echo ""
 		exit
 	else
+		clear
 		echo ""
 		echo "ชื่อบัญชีที่ระบุอยู่ในระบบแล้ว"
 		echo ""
@@ -197,7 +196,7 @@ if [[ $CHECKSYSTEM ]]; then
 	fi
 
 else
-
+	clear
 	echo ""
 	read -p "ชื่อบัญชีที่ต้องการสร้าง : " -e CLIENT
 
@@ -301,7 +300,7 @@ if [[ $CHECKSYSTEM ]]; then
 	exit
 
 else
-
+	clear
 	echo ""
 	read -p "กำหนดชื่อบัญชีผู้ใช้ที่จะสร้างให้มีกี่ตัวอักษร : " -e -i 4 CPNUM
 	echo ""
@@ -403,15 +402,12 @@ fi
 	4) # ==================================================================================================================
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
 C=1
@@ -547,17 +543,15 @@ fi
 fi
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "${GRAY}ตั้งค่าเวลารีบูทเซิฟเวอร์อัตโนมัติ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| รีบูททุกๆ 1  ชั่วโมง"
@@ -711,17 +705,15 @@ echo ""
 read -n1 -r -p "หากเข้าใจแล้วให้กด Enter เพื่อตั้งค่า หรือกด CTRL+C เพื่อยกเลิก"
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "${GRAY}ตั้งค่า Hostname${NC}"
 echo ""
 echo -e "|${GRAY} 1${NC}| ติดตั้งการอัพเดตโฮสเนมอัตโนมัติ"
@@ -879,17 +871,15 @@ RXTOTAL=$(vnstat -i $INTERFACE | grep "rx:" | awk '{print $2" "substr ($9, 1, 1)
 TXTOTAL=$(vnstat -i $INTERFACE | grep "tx:" | awk '{print $5" "substr ($9, 1, 1)}')
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "แบนด์วิดท์ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
 	echo ""
@@ -1134,17 +1124,15 @@ fi
 	13) # ==================================================================================================================
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "${GRAY}ปรับเปลี่ยนระบบของเซิฟเวอร์ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| 1 ไฟล์เชื่อมต่อได้ 1 เครื่องเท่านั้น สามารถสร้างไฟล์เพิ่มได้"
@@ -1220,17 +1208,15 @@ if [[ ! $CHECKSYSTEM ]]; then
 fi
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "${GRAY}แบนและปลดแบนบัญชีผู้ใช้ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| แบนบัญชีผู้ใช้"
@@ -1310,17 +1296,15 @@ esac
 	15) # ==================================================================================================================
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "|${GRAY}1${NC}| เปิดใช้งานการปรับแต่งความเร็วอินเทอร์เน็ต"
 echo -e "|${GRAY}2${NC}| ปิดใช้งานการปรับแต่งความเร็วอินเทอร์เน็ต"
 echo ""
@@ -1397,17 +1381,15 @@ esac
 	16) # ==================================================================================================================
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "เปิด-ปิด-รีสตาร์ท การทำงานของระบบ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
 echo ""
 echo -e "|${GRAY}1${NC}| OPENVPN"
@@ -1630,17 +1612,15 @@ esac
 	17) # ==================================================================================================================
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "แก้ไขคอนฟิกต่างๆในระบบ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
 echo ""
 echo -e "|${GRAY}1${NC}| OPENVPN ไฟล์ต้นแบบการสร้างคอนฟิก"
@@ -1696,17 +1676,15 @@ if [[ ! -e /usr/local/bin/gdrive ]]; then
 fi
 
 clear
-echo " ========== OS-32 & 64-bit ================"
-echo " #                                        #"
+echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #               { VPN / SSH }            #"
-echo " #                                        #"
-echo " =============== OS-32 & 64-bit ==========="
+echo " #========================================#"
 echo " ไอพีเซิฟ: $IP "
 echo ""
+
 echo -e "|${GRAY}1${NC}| สำรองข้อมูล"
 echo -e "|${GRAY}2${NC}| นำเข้า"
 echo ""
