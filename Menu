@@ -35,10 +35,10 @@ echo " #    Truemoney Wallet : 083-986-7540       #"
 echo " #               { VPN / SSH }              #"
 echo " #                                          #"
 echo " =============== OS-32 & 64-bit ============="
-echo "                    ไอพีเซิฟ: $IP "
+echo " ไอพีเซิฟ: $IP "
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
-	echo -e "เมนูสคริปท์ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
+	echo "เมนูสคริปท์ "
 	echo ""
 	echo -e "|${GRAY} 1${NC}| เพิ่มบัญชีผู้ใช้"
 	if [[ $CHECKSYSTEM ]]; then
