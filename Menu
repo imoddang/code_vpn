@@ -25,9 +25,18 @@ fi
 
 # Menu
 echo ""
-echo "  (\_(\ "
-echo " (=’ :’) :* Script by Dang VPN"
-echo "  °.¸¸.•"
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY DANG VPN         #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18   #    "
+echo "               #    Truemoney Wallet : 083-986-7540           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "เมนูสคริปท์ ${GRAY}✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:*${NC}"
