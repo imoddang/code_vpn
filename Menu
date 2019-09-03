@@ -167,8 +167,9 @@ if [[ $CHECKSYSTEM ]]; then
 	if [ $? -eq 0 ]; then
 		read -p "รหัสผ่าน : " -e PASSWD
 		echo ""
-		echo -e "     ${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
-		read -p "กำหนดวันหมดอายุ : " -e TimeActive
+		echo -e "${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
+		echo ""
+                read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
 		SERVERNAME=$(grep '^remote ' /etc/openvpn/client-common.txt | cut -d " " -f 2 | head -n1)
 		useradd -e `date -d "$TimeActive days" +"%Y-%m-%d"` -s /bin/false -M $CLIENT
@@ -182,7 +183,7 @@ if [[ $CHECKSYSTEM ]]; then
 			rm Backup-Account.tgz
 			rm Backup-OpenVPN.tgz
 		fi
-		clear
+		
 		echo ""
 		echo "ชื่อบัญชี : $CLIENT"
 		echo "รหัสผ่าน : $PASSWD"
@@ -192,7 +193,7 @@ if [[ $CHECKSYSTEM ]]; then
 		echo ""
 		exit
 	else
-		clear
+		
 		echo ""
 		echo "ชื่อบัญชีที่ระบุอยู่ในระบบแล้ว"
 		echo ""
@@ -207,7 +208,7 @@ if [[ $CHECKSYSTEM ]]; then
 	fi
 
 else
-	clear
+	
 	echo ""
 	read -p "ชื่อบัญชีที่ต้องการสร้าง : " -e CLIENT
 
@@ -226,7 +227,7 @@ else
 	fi
 
 	echo ""
-	echo -e "     ${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
+	echo -e "${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
 	read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
 	newclient () {
