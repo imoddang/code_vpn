@@ -167,7 +167,7 @@ if [[ $CHECKSYSTEM ]]; then
 	if [ $? -eq 0 ]; then
 		read -p "รหัสผ่าน : " -e PASSWD
 		echo ""
-		echo -e "     ${GRAY}ระบุตัวเลข 30 จะทำให้บัญชีที่สร้างใช้งานไม่ได้ในอีก 30 วัน${NC}"
+		echo -e "     ${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
 		read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
 		SERVERNAME=$(grep '^remote ' /etc/openvpn/client-common.txt | cut -d " " -f 2 | head -n1)
@@ -226,7 +226,7 @@ else
 	fi
 
 	echo ""
-	echo -e "     ${GRAY}ระบุตัวเลข 30 จะทำให้บัญชีที่สร้างใช้งานไม่ได้ในอีก 30 วัน${NC}"
+	echo -e "     ${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
 	read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
 	newclient () {
