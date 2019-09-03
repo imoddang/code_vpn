@@ -31,7 +31,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo "เลือกเมนูโดยพิมพ์ตัวเลข"
@@ -157,7 +157,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 if [[ $CHECKSYSTEM ]]; then
@@ -284,7 +284,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 if [[ $CHECKSYSTEM ]]; then
@@ -388,7 +388,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 read -p "ชื่อบัญชีที่ต้องการลบ : " CLIENT
@@ -437,7 +437,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 C=1
 ON=0
@@ -478,7 +478,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 if [[ ! $CHECKSYSTEM ]]; then
@@ -538,7 +538,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 read -p "ชื่อบัญชีที่ต้องการเปลี่ยนวันหมดอายุ : " -e CLIENT
@@ -584,7 +584,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
  if [ ! -e /usr/local/bin/Reboot-Server ]; then
@@ -721,7 +721,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 if [[ -e /usr/local/bin/speedtest ]]; then
@@ -744,7 +744,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 if [[ ! -e /etc/openvpn/server.conf ]]; then
@@ -774,7 +774,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 echo -e "${GRAY}ตั้งค่า Hostname${NC}"
@@ -926,7 +926,7 @@ echo " #  -----------About Us------------       #"
 echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
 echo " #  Truemoney Wallet : 083-986-7540       #"
 echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
+echo " # ไอพีเซิร์ฟ: $IP "
 echo ""
 
 INTERFACE=`ifconfig | head -n1 | awk '{print $1}' | cut -d ':' -f 1`
@@ -981,15 +981,7 @@ fi
 	;;
 
 	11) # ==================================================================================================================
-clear
-echo " #========================================#"
-echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
-echo " #  -----------About Us------------       #"
-echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
-echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
-echo ""
+
 
 DATE1=$(vnstat -h | sed -n '16p' | awk '{print $1}')
 RX1=$(vnstat -h | sed -n '16p' | awk '{print $2}' | cut -d ',' -f 1-20 --output-delimiter='')
@@ -1138,6 +1130,18 @@ CONTX24=$(echo "scale=2;$TX24 / 1000000" | bc)
 
 NOW=`echo -e "${GRAY}เวลาปัจจุบัน${NC}"`
 echo ""
+
+clear
+echo " #========================================#"
+echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+echo " #  -----------About Us------------       #"
+echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+echo " #  Truemoney Wallet : 083-986-7540       #"
+echo " #========================================#"
+echo " # ไอพีเซิร์ฟ: $IP "
+echo ""
+
+
 echo -e "${GRAY}ตัวเลขรับและส่งข้อมูลที่แสดงจะมีหน่วยวัดปริมาณเป็น Gigabyte ทั้งหมด${NC}"
 printf "%-7s %-7s %-10s\n" "เวลา" "รับข้อมูล" "ส่งข้อมูล"
 echo ""
@@ -1171,15 +1175,7 @@ exit
 	;;
 
 	12) # ==================================================================================================================
-clear
-echo " #========================================#"
-echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
-echo " #  -----------About Us------------       #"
-echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
-echo " #  Truemoney Wallet : 083-986-7540       #"
-echo " #========================================#"
-echo " ไอพีเซิฟ: $IP "
-echo ""
+
 
 if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	apt-get install python
@@ -1187,15 +1183,32 @@ if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	chmod +x /usr/local/bin/Banwidth-Per-Client
 	clear
 	echo ""
-	echo -e "Script by ${GRAY}Dang Vpn ${NC}"
+	
+clear
+echo " #========================================#"
+echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+echo " #  -----------About Us------------       #"
+echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+echo " #  Truemoney Wallet : 083-986-7540       #"
+echo " #========================================#"
+echo " # ไอพีเซิร์ฟ: $IP "
+echo ""
+
 	echo ""
 	Banwidth-Per-Client
 	echo ""
 else
 	clear
 	echo ""
-	echo -e "Script by ${GRAY}Dang Vpn ${NC}"
-	echo ""
+	clear
+echo " #========================================#"
+echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+echo " #  -----------About Us------------       #"
+echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+echo " #  Truemoney Wallet : 083-986-7540       #"
+echo " #========================================#"
+echo " # ไอพีเซิร์ฟ: $IP "
+echo ""
 	Banwidth-Per-Client
 	echo ""
 fi
