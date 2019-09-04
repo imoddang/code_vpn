@@ -355,12 +355,12 @@ END
 	apt-get -y install vnstat
 	
 	clear
-	echo ""
-	echo ""
-	echo " Script by Dang Vpn"
-	echo ""
-	echo ""
-	echo "Donate via TrueMoney Wallet : 083-986-7540"
+	echo " #========================================#"
+        echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+        echo " #  -----------About Us------------       #"
+        echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+        echo " #  Truemoney Wallet : 083-986-7540       #"
+        echo " #========================================#"
 	echo ""
 	echo "OpenVPN, Squid Proxy, Nginx .....Install finish."
 	echo "IP Server : $IP"
