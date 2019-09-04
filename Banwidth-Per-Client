@@ -38,4 +38,4 @@ for line in stats:
                 h['virt'] = cols[0]
 fmt = " %(cn)-16s %(virt)-16s %(sent)12s %(recv)12s "
 print fmt % headers  
-print .join([fmt % h for h in hosts])
+print  "\n".join([fmt % h for h in hosts])
