@@ -1,4 +1,10 @@
 #!/bin/bash
+echo " #========================================#"
+echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+echo " #  -----------About Us------------       #"
+echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+echo " #  Truemoney Wallet : 083-986-7540       #"
+echo " #========================================#"
 
 if [[ "$EUID" -ne 0 ]]; then
 	echo ""
@@ -365,6 +371,14 @@ sed -i $IP2 /etc/squid3/squid.conf;
 	rm -f /root/$CLIENT.ovpn
 
 	clear
+
+         echo " #========================================#"
+         echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+         echo " #  -----------About Us------------       #"
+         echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+         echo " #  Truemoney Wallet : 083-986-7540       #"
+         echo " #========================================#"
+
 	echo ""
 	echo "OpenVPN, Squid Proxy, Nginx .....Install finish."
 	echo "IP Server : $IP"
