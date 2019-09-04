@@ -36,6 +36,6 @@ for line in stats:
         for h in hosts:
             if h['cn'] == cols[1]:
                 h['virt'] = cols[0]
-fmt = " %(cn)-10s %(virt)-10s %(sent)16s %(recv)16s "
+fmt = " %(cn)-16s %(virt)-16s %(sent)12s %(recv)12s "
 print fmt % headers  
 print "\n".join([fmt % h for h in hosts])
