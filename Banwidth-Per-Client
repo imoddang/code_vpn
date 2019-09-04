@@ -6,10 +6,10 @@ stats = status_file.readlines()
 status_file.close()
 hosts = []
 headers = {  
-    'cn':    'CLIENT', 
-    'virt':  'CLIENT IP',
-    'sent':  'DOWNLOAD', 
-    'recv':  'UPLOAD',
+    'cn':  'CLIENT', 
+    'virt': 'CLIENT IP',
+    'sent': 'DOWNLOAD', 
+    'recv': 'UPLOAD',
 }
 sizes = [  
     (1<<50L, 'PB'),
