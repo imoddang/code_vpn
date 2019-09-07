@@ -150,34 +150,50 @@ clear
 case $MENU in
 
 	1) # ==================================================================================================================
+clear
+echo " #========================================#"
+echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
+echo " #  -----------About Us------------       #"
+echo " #  OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18 #"
+echo " #  Truemoney Wallet : 083-986-7540       #"
+echo " #========================================#"
+echo " # ไอพีเซิร์ฟ: $IP "
+echo ""
 
 if [[ $CHECKSYSTEM ]]; then
 	echo ""
 	read -p "ชื่อบัญชีที่ต้องการสร้าง : " -e CLIENT
 
 	if [ $? -eq 0 ]; then
-		read -p "รหัสผ่าน : " -e PASSWORD
+		read -p "รหัสผ่าน : " -e PASSWD
 		echo ""
-		echo -e "     ${GRAY}ระบุตัวเลข 30 จะทำให้บัญชีที่สร้างใช้งานไม่ได้ในอีก 30 วัน${NC}"
-		read -p "กำหนดวันหมดอายุ : " -e TimeActive
+		echo -e "${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
+		echo ""
+                read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
-		PROXY=$(grep '^http_port ' /etc/squid/squid.conf | cut -d " " -f 2)
-		PROXY=$(grep '^http_port ' /etc/squid3/squid.conf | cut -d " " -f 2)
+		SERVERNAME=$(grep '^remote ' /etc/openvpn/client-common.txt | cut -d " " -f 2 | head -n1)
 		useradd -e `date -d "$TimeActive days" +"%Y-%m-%d"` -s /bin/false -M $CLIENT
 		EXP="$(chage -l $CLIENT | grep "Account expires" | awk -F": " '{print $2}')"
-		echo -e "$PASSWORD\n$PASSWORD\n"|passwd $CLIENT &> /dev/null
-
-		clear
+		echo -e "$PASSWD\n$PASSWD\n"|passwd $CLIENT &> /dev/null
+		if [[ -e /usr/local/bin/gdrive ]]; then
+			tar -czvf Backup-Account.tgz /etc/passwd /etc/group /etc/shadow /etc/gshadow
+			tar -czvf Backup-OpenVPN.tgz /etc/openvpn
+			gdrive upload Backup-Account.tgz
+			gdrive upload Backup-OpenVPN.tgz
+			rm Backup-Account.tgz
+			rm Backup-OpenVPN.tgz
+		fi
+		
 		echo ""
 		echo "ชื่อบัญชี : $CLIENT"
-		echo "รหัสผ่าน : $PASSWORD"
+		echo "รหัสผ่าน : $PASSWD"
 		echo "หมดอายุในวันที่ : $EXP"
 		echo ""
-		echo "IP : $IP"
-		echo "Port : 22"
-		echo "Proxy Port : $PROXY"
+		echo "ดาวน์โหลดคอนฟิก : http://$IP:85/$SERVERNAME.ovpn"
+		echo ""
 		exit
 	else
+		
 		echo ""
 		echo "ชื่อบัญชีที่ระบุอยู่ในระบบแล้ว"
 		echo ""
@@ -192,7 +208,7 @@ if [[ $CHECKSYSTEM ]]; then
 	fi
 
 else
-
+	
 	echo ""
 	read -p "ชื่อบัญชีที่ต้องการสร้าง : " -e CLIENT
 
@@ -211,7 +227,7 @@ else
 	fi
 
 	echo ""
-	echo -e "     ${GRAY}ระบุตัวเลข 30 จะทำให้บัญชีที่สร้างใช้งานไม่ได้ในอีก 30 วัน${NC}"
+	echo -e "${GRAY}กำหนดจำนวนวันที่จะหมดอายุการใช้งาน${NC}"
 	read -p "กำหนดวันหมดอายุ : " -e TimeActive
 
 	newclient () {
@@ -240,7 +256,14 @@ else
 	useradd -e `date -d "$TimeActive days" +"%Y-%m-%d"` -s /bin/false -M $CLIENT
 	EXP="$(chage -l $CLIENT | grep "Account expires" | awk -F": " '{print $2}')"
 	echo -e "$CLIENT\n$CLIENT\n"|passwd $CLIENT &> /dev/null
-
+	if [[ -e /usr/local/bin/gdrive ]]; then
+		tar -czvf Backup-Account.tgz /etc/passwd /etc/group /etc/shadow /etc/gshadow
+		tar -czvf Backup-OpenVPN.tgz /etc/openvpn
+		gdrive upload Backup-Account.tgz
+		gdrive upload Backup-OpenVPN.tgz
+		rm Backup-Account.tgz
+		rm Backup-OpenVPN.tgz
+	fi
 	clear
 	echo ""
 	echo "ชื่อบัญชี : $CLIENT"
@@ -249,7 +272,6 @@ else
 	echo "ดาวน์โหลดคอนฟิก : http://$IP:85/$RANDOMFOLDER/$CLIENT.ovpn"
 	echo ""
 	exit
-
 fi
 
 	;;
@@ -1828,6 +1850,4 @@ fi
 
 	;;
 
-
 esac
-
