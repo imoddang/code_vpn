@@ -1202,7 +1202,7 @@ echo ""
 else
 	clear
 	echo ""
-	clear
+	
 echo " #========================================#"
 echo " #  AUTOSCRIPT CREATED BY DANG VPN        #"
 echo " #  -----------About Us------------       #"
